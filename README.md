@@ -57,7 +57,7 @@ Moraru, C. (2023) VirClus - A Tool for Hierarchical Clustering, Core Protein Det
   InterPro, or BLAST NR. These databases are not distributed with VirClust standalone. They should be downloaded and 
   installed separately.  
     #### InterPro and BLAST NR databases
-       The InterPro database and InterProScan software should be downloaded and installed from here: 
+      The InterPro database and InterProScan software should be downloaded and installed from here: 
       https://www.ebi.ac.uk/interpro/download/InterProScan/ (comes together with the InterProScan software). VirClust 
       singularity will connect to your InterProScan installation, as long as you provide the path toward its folder.  
       The BLAST NR database should be downloaded and installed as instructed here: 
