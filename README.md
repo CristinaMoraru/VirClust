@@ -52,17 +52,28 @@ Moraru, C. (2023) VirClus - A Tool for Hierarchical Clustering, Core Protein Det
     # this.path
     install.packages("this.path")
   ```
-  - downdload and install the databases used for annotation
-VirClust uses the following databases for protein annotations: Efam, Efam-XC, PHROGS, pVOGs, VOGDB, 
-InterPro, or BLAST NR. These databases are not distributed with VirClust standalone. They should be downloaded and 
-installed separately.  
+  - downdload and install the databases used for annotation  
+  VirClust uses the following databases for protein annotations: Efam, Efam-XC, PHROGS, pVOGs, VOGDB, 
+  InterPro, or BLAST NR. These databases are not distributed with VirClust standalone. They should be downloaded and 
+  installed separately.  
 #### InterPro and BLAST NR databases  
-The InterPro database and InterProScan software should be downloaded and installed from here: 
-https://www.ebi.ac.uk/interpro/download/InterProScan/ (comes together with the InterProScan software). VirClust 
-singularity will connect to your InterProScan installation, as long as you provide the path toward its folder.  
-The BLAST NR database should be downloaded and installed as instructed here: 
-https://www.ncbi.nlm.nih.gov/books/NBK569850/ .
+  The InterPro database and InterProScan software should be downloaded and installed from here: 
+  https://www.ebi.ac.uk/interpro/download/InterProScan/ (comes together with the InterProScan software). VirClust 
+  singularity will connect to your InterProScan installation, as long as you provide the path toward its folder.  
+  The BLAST NR database should be downloaded and installed as instructed here: 
+  https://www.ncbi.nlm.nih.gov/books/NBK569850/ .
+#### Efam, Efam-XC, PHROGS, pVOGs and VOGDB databases
+The Efam, Efam-XC, PHROGS, pVOGs, and VOGDB databases can be downloaded from the VirClust website 
+(see Download section), in a format compatible with VirClust. After downloading, you should remove them from the 
+.tar.gz archive and place them all in a folder named dbs/, at a location of your choice.  
 
+The folder structure and the names of the subfolders for each database should be as follows:   
++ dbs/
+  + Efam/
+  + Efam_XC/
+  + PHROGS/
+  + pVOGs/
+  + VOGDB/
 
 ## How to run the VirClust source-code from this repository
 
