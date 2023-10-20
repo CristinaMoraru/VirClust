@@ -56,8 +56,8 @@ Moraru, C. (2023) VirClus - A Tool for Hierarchical Clustering, Core Protein Det
   VirClust uses the following databases for protein annotations: Efam, Efam-XC, PHROGS, pVOGs, VOGDB, 
   InterPro, or BLAST NR. These databases are not distributed with VirClust standalone. They should be downloaded and 
   installed separately.  
-    #### InterPro and BLAST NR databases  
-      The InterPro database and InterProScan software should be downloaded and installed from here: 
+    #### InterPro and BLAST NR databases
+       The InterPro database and InterProScan software should be downloaded and installed from here: 
       https://www.ebi.ac.uk/interpro/download/InterProScan/ (comes together with the InterProScan software). VirClust 
       singularity will connect to your InterProScan installation, as long as you provide the path toward its folder.  
       The BLAST NR database should be downloaded and installed as instructed here: 
@@ -76,4 +76,11 @@ Moraru, C. (2023) VirClus - A Tool for Hierarchical Clustering, Core Protein Det
       + VOGDB/
 
 ## How to run the VirClust source-code from this repository
-
+- use the command
+- for options, see "Parameters for VirClust stand-alone" in the manual found here:
+- In addition, the options below are mandatory when running the corresponding annotation steps
+  ```bash
+  interproscan=path/toward/interproscanfolder #when annotating against InterPro Db
+  blastdb=path/toward/NRblastdb #when annotating against NR blast db
+  databases=path/toward/databasefolder #when annotating against all other DBs
+  ```
