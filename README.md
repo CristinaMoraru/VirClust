@@ -77,6 +77,10 @@ Moraru, C. (2023) VirClus - A Tool for Hierarchical Clustering, Core Protein Det
 
 ## How to run the VirClust source-code from this repository
 - use the command
+  ```bash
+  Rscript path/to/VirClust_MASTER.R sing=conda condaenvpath=path/toward/VirClust/conda/env
+[...options]
+  ```
 - for options, see "Parameters for VirClust stand-alone" in the manual found here:
 - In addition, the options below are mandatory when running the corresponding annotation steps
   ```bash
