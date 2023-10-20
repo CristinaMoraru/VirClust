@@ -75,7 +75,7 @@ The Efam, Efam-XC, PHROGS, pVOGs, and VOGDB databases can be downloaded from the
   ```bash
   Rscript path/to/VirClust_MASTER.R sing=conda condaenvpath=path/toward/VirClust/conda/env [...options]
   ```
-- for options, see "Parameters for VirClust stand-alone" in the manual found here:
+- for options, see "Parameters for VirClust stand-alone" in the manual found here: https://github.com/CristinaMoraru/VirClust/tree/main/VirClust/vir_clust_standalone/manuals/VirClust-v2_manual_standalone-condadistrib.pdf
 - In addition, the options below are mandatory when running the corresponding annotation steps
   ```bash
   interproscan=path/toward/interproscanfolder #when annotating against InterPro Db
