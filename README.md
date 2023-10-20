@@ -31,7 +31,7 @@ Moraru, C. (2023) VirClus - A Tool for Hierarchical Clustering, Core Protein Det
 ## How to install the VirClust source-code from this repository
 - download the VirClust repository, e.g by using
   ```bash
-  git clone https://github.com/CristinaMoraru/VirClust
+    git clone https://github.com/CristinaMoraru/VirClust
   ```
 - create a conda environment using the YAML file found in this repo folder: VirClust/ user-install_sourcecode/VirClust.yml
   ```bash
@@ -42,15 +42,27 @@ Moraru, C. (2023) VirClus - A Tool for Hierarchical Clustering, Core Protein Det
   ```bash
     R
   ```
-- downdload and install the databases used for annotation
-```R
-  options(repos = c(CRAN = "https://cloud.r-project.org/"))
-  #Complex heatmap
-  if (!require("BiocManager", quietly = TRUE)) 
-  install.packages("BiocManager") 
-  BiocManager::install("ComplexHeatmap" ) 
-  # this.path
-  install.packages("this.path")
-```
-- dksjlkjf
+  
+  ```R
+    options(repos = c(CRAN = "https://cloud.r-project.org/"))
+    #Complex heatmap
+    if (!require("BiocManager", quietly = TRUE)) 
+    install.packages("BiocManager") 
+    BiocManager::install("ComplexHeatmap" ) 
+    # this.path
+    install.packages("this.path")
+  ```
+  - downdload and install the databases used for annotation
+VirClust uses the following databases for protein annotations: Efam, Efam-XC, PHROGS, pVOGs, VOGDB, 
+InterPro, or BLAST NR. These databases are not distributed with VirClust standalone. They should be downloaded and 
+installed separately.  
+#### InterPro and BLAST NR databases  
+The InterPro database and InterProScan software should be downloaded and installed from here: 
+https://www.ebi.ac.uk/interpro/download/InterProScan/ (comes together with the InterProScan software). VirClust 
+singularity will connect to your InterProScan installation, as long as you provide the path toward its folder.  
+The BLAST NR database should be downloaded and installed as instructed here: 
+https://www.ncbi.nlm.nih.gov/books/NBK569850/ .
+
+
+## How to run the VirClust source-code from this repository
 
