@@ -2,26 +2,26 @@
 
 ## VirClust is a bioinformatics tool which can be used for:  
 
-• virus clustering  
+- virus clustering  
 
-• protein annotation  
+- protein annotation  
 
-• core protein calculation  
+- core protein calculation  
 
 At its core is the grouping of viral proteins into clusters of three different levels:  
 
-• at the first level, proteins are grouped based on their reciprocal BLASTP similarities into protein clusters, or PCs.  
+- at the first level, proteins are grouped based on their reciprocal BLASTP similarities into protein clusters, or PCs.  
 
-• at the second level, PCs are grouped based on their Hidden Markov Model (HMM) similarities into protein superclusters, or PSCs.  
+- at the second level, PCs are grouped based on their Hidden Markov Model (HMM) similarities into protein superclusters, or PSCs.  
 
-• at the third, still experimental level, PSCs are grouped based on their HMM similarities into protein super-superclusters, or PSSC.  
+- at the third level, PSCs are grouped based on their HMM similarities into protein super-superclusters, or PSSC.  
 
 VirClust if available at http://virclust.icbm.de as a web-service or as a singularity package. In addition, the source code of VirClust v2.0 is available in this repository.
 This repository contains:
-- the source-code for the stand-alone VirClust, written in R
-- the source-code for the VirClust shiny-app, which provides a grahical user interface for the stand-alone VirClust
-- the manuals
-- the YAML file for the VirClust environment, needed when running VirClust from the source-code
+- the source-code for the stand-alone VirClust, written in R (https://github.com/CristinaMoraru/VirClust/tree/main/VirClust/vir_clust_standalone)
+- the source-code for the VirClust shiny-app, which provides a grahical user interface for the stand-alone VirClust (https://github.com/CristinaMoraru/VirClust/tree/main/VirClust)
+- the manuals (https://github.com/CristinaMoraru/VirClust/tree/main/VirClust/vir_clust_standalone/manuals)
+- the YAML file for the VirClust environment, needed when running VirClust from the source-code (https://github.com/CristinaMoraru/VirClust/tree/main/VirClust/user-install_sourcecode/VirClust.yml)
 
 
 ## How to cite VirClust
@@ -78,8 +78,7 @@ Moraru, C. (2023) VirClus - A Tool for Hierarchical Clustering, Core Protein Det
 ## How to run the VirClust source-code from this repository
 - use the command
   ```bash
-  Rscript path/to/VirClust_MASTER.R sing=conda condaenvpath=path/toward/VirClust/conda/env
-[...options]
+  Rscript path/to/VirClust_MASTER.R sing=conda condaenvpath=path/toward/VirClust/conda/env [...options]
   ```
 - for options, see "Parameters for VirClust stand-alone" in the manual found here:
 - In addition, the options below are mandatory when running the corresponding annotation steps
