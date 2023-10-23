@@ -70,7 +70,7 @@ The Efam, Efam-XC, PHROGS, pVOGs, and VOGDB databases can be downloaded from the
       + pVOGs/
       + VOGDB/
 
-## If you can't create the conda env from the YAML file, the do:
+## If you can't create the conda env from the YAML file, then do:
 ```bash
 conda create -n VirClust
 conda activate VirClust
