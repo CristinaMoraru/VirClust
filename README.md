@@ -130,3 +130,12 @@ conda install -c bioconda clustalo
   blastdb=path/toward/NRblastdb #when annotating against NR blast db
   databases=path/toward/databasefolder #when annotating against all other DBs
   ```
+
+
+## How to run VirClust shiny-app
+Open RStudio, create a new project for the folder VirClust (directly in this folder there are the files of the shiny-app)o
+- open either ui.R or server.R files in RStudio,
+- press button "Run App"
+- this will start the VIRIDIC GUI, which then runs the VirClust stand-alone code
+
+In addition, if you install the shiny-server, you can run VirClust as an independent web-app.
