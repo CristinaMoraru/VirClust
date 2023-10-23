@@ -70,7 +70,7 @@ The Efam, Efam-XC, PHROGS, pVOGs, and VOGDB databases can be downloaded from the
       + pVOGs/
       + VOGDB/
 
-## If you can't create the conda env from the YAML file, then do:
+## If you can't create the conda env from the YAML file, then create the VirClust environment manually:
 ```bash
 conda create -n VirClust
 conda activate VirClust
@@ -102,8 +102,6 @@ conda install -c edurand r-complexheatmap
 # Some R packages must be installed manually, as follows:
 R
 	options(repos = c(CRAN = "https://cloud.r-project.org/"))
-	#install.packages("utils") -it is found in r-base, nu o sa fie actualizat
-	#install.packages("stats") -it is found in r-base, nu o sa fie actualizat
 	#install.packages("ComplexHeatmap")
 					if (!require("BiocManager", quietly = TRUE))
 					    install.packages("BiocManager")
