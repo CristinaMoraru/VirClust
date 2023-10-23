@@ -70,6 +70,56 @@ The Efam, Efam-XC, PHROGS, pVOGs, and VOGDB databases can be downloaded from the
       + pVOGs/
       + VOGDB/
 
+## If you can't create the conda env from the YAML file, the do:
+```bash
+conda create -n VirClust
+conda activate VirClust
+
+# install R and its packages
+conda install -c conda-forge r-base
+conda install -c conda-forge r-stringr #installs also magrittr
+#conda install -c conda-forge r-magrittr
+conda install -c conda-forge r-dplyr #installs also tibble, tidyselect
+conda install -c conda-forge r-tidyr #installs also purrr
+conda install -c conda-forge r-ggplot2 
+conda install -c conda-forge r-seqinr
+conda install -c conda-forge r-readr
+conda install -c conda-forge r-data.table
+conda install -c conda-forge r-zip
+conda install -c conda-forge r-furrr #installs also future
+conda install -c conda-forge r-ape
+conda install -c conda-forge r-pvclust
+conda install -c conda-forge r-dendextend #install also viridis
+conda install -c conda-forge r-circlize
+conda install -c conda-forge r-sys
+conda install -c conda-forge r-DT #also installs knitr
+conda install -c conda-forge r-shinyjs
+conda install -c conda-forge r-shiny
+conda install -c conda-forge r-shinyWidgets
+conda install -c conda-forge r-shinythemes
+conda install -c edurand r-complexheatmap
+
+# Some R packages must be installed manually, as follows:
+R
+	options(repos = c(CRAN = "https://cloud.r-project.org/"))
+	#install.packages("utils") -it is found in r-base, nu o sa fie actualizat
+	#install.packages("stats") -it is found in r-base, nu o sa fie actualizat
+	#install.packages("ComplexHeatmap")
+					if (!require("BiocManager", quietly = TRUE))
+					    install.packages("BiocManager")
+					BiocManager::install("ComplexHeatmap")
+
+	install.packages("this.path")
+
+# install bioinf toools
+conda install -c bioconda blast=2.14
+conda install -c bioconda metagene_annotator
+conda install -c bioconda hmmer
+conda install -c bioconda hhsuite
+conda install -c bioconda mcl
+conda install -c bioconda clustalo
+```
+
 ## How to run the VirClust source-code from this repository
 - use the command
   ```bash
