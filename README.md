@@ -97,7 +97,6 @@ conda install -c conda-forge r-shinyjs
 conda install -c conda-forge r-shiny
 conda install -c conda-forge r-shinyWidgets
 conda install -c conda-forge r-shinythemes
-conda install -c edurand r-complexheatmap
 
 # Some R packages must be installed manually, as follows:
 R
