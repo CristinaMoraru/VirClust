@@ -126,7 +126,6 @@ dependencies:
   - r-codetools=0.2_19=r43hc72bb7e_1
   - r-colorspace=2.1_0=r43h57805ef_1
   - r-commonmark=1.9.0=r43h57805ef_1
-  - r-complexheatmap=1.12.0=0
   - r-cpp11=0.4.6=r43hc72bb7e_0
   - r-crayon=1.5.2=r43hc72bb7e_2
   - r-crosstalk=1.2.0=r43hc72bb7e_2
