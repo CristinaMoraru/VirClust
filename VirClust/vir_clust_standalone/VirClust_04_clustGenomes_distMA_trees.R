@@ -222,6 +222,7 @@ myPC_distMA_fun <- function(data)
   row.names(mydistDF_spread) <- mydistDF_spread$genome_name
   mydistDF_spread <- mydistDF_spread %>%
     select(-genome_name)
+  mydistDF_spread = mydistDF_spread[colnames(data), colnames(data)]
   
   mydistDF <- as.dist(mydistDF_spread)    # !!!! for this function to work correctly, the order of the rows needs to be the same as the columns
   
